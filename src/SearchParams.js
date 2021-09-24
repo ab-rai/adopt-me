@@ -41,11 +41,8 @@ const SearchParams = () => {
             placeholder="Location"
           />
         </label>
-        <button>Submit</button>
-      </form>
-      <Results pets={pets}/>
         
-      <label htmlFor="animal">
+        <label htmlFor="animal">
         Animal
         <select
           id="animal"
@@ -78,7 +75,13 @@ const SearchParams = () => {
           ))}
         </select>
       </label>
-      ;
+      <button>Submit</button>
+
+      </form>
+        
+            
+      <Results pets={pets}/>
+      
     </div>
   );
 };
